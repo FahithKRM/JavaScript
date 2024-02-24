@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datetime{
+    color: #ffffff;
+    font-family: sans-serif;
+    border-color: #4CAF50;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.datetime span{
+    margin-left: 10px;
+}
+
+#time{
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#date{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#ampm{
+    font-size: 54px;
+    font-weight: 900;
+    align-items: end;
+}
+
+/* Adjest the different screen size */
+@media screen and (max-width: 800px){
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .datetime{
+        color: #ffffff;
+        font-family: sans-serif;
+        border-color: #4CAF50;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 10px;
+        padding: 10px;
+    
+    }
+    
+    .datetime span{
+        margin-left: 5px;
+    }
+    
+    #time{
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    
+    #date{
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    #ampm{
+        font-size: 27px;
+        font-weight: 900;
+        align-items: end;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .datetime{
+        color: #ffffff;
+        font-family: sans-serif;
+        border-color: #4CAF50;
+        border-style: solid;
+        border-width: 1.5px;
+        border-radius: 5px;
+        padding: 5px;
+    
+    }
+    
+    .datetime span{
+        margin-left: 3px;
+    }
+    
+    #time{
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    
+    #date{
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    #ampm{
+        font-size: 14px;
+        font-weight: 900;
+        align-items: end;
+    }
+}
