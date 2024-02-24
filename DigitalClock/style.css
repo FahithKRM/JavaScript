@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+}
+
+.container{
+    color: white;
+    font-size: 72px;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper{
+    border-width: 5px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container span{
+    margin:10px;
+}
+
+#ampm{
+    font-size: 54px;
+    align-items: end;
+}
