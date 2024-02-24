@@ -2,9 +2,10 @@ var ampm = document.querySelector("#ampm")
 
 function displayTime(){
     let datetime = new Date()
-    let DaysName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thirsday", "Friday", "Saturday"]
+    let DaysName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thirsday", 
+        "Friday", "Saturday"]
     let MonthsName = ["January", "February", "March", "April", "May", "June", 
-    "July", "Augest", "September", "October", "November", "December"]
+        "July", "Augest", "September", "October", "November", "December"]
 
     let hours = datetime.getHours()
     let minutes = datetime.getMinutes()
