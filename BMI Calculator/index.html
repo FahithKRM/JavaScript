@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bmiform">
+        <h1>BMI CALCULATOR</h1>
+      <div id="bmiinput">
+        <label for="weight">Weight : </label>
+        <input id="weight" type="number" />
+        <label for="unit"> kg </label><br/>
+        <label for="height">Height : </label>
+        <input id="height" type="number" /> 
+        <label for="unit"> m</label><br/><br>
+        <button onclick="CalculateButton()">Calculate</button>
+      </div>
+
+      <div id="bmiresults">
+        <label for="display">Your BMI Result : </label>
+        <span id="bmiValue">00</span>
+        <label for="unit"> kg/m^2</label><br/>
+        <button onclick="ResetButton()">Reset</button> <br /><br />
+      </div>
+
+      <div id="bmilevels">
+        <div id="underweight"></div>
+        <div id="healthyweight"></div>
+        <div id="overweight"></div>
+        <div id="obesity"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
