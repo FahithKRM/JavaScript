@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        background-color: #e7eaf6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      
+      .main{
+        background-color: #fff;
+        width: 280px;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      #img{
+        width: 250px;
+        height: 250px;
+        margin: 15px ;
+        border-radius: 10px;
+      }
+
+      h3, p{
+        margin: 10px 20px;
+      }
+
+      p{
+        color: gray;
+      }
+
+      .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+      }
+
+      .attribution a { 
+        color: hsl(228, 45%, 44%); 
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div>
+        <img id="img" src="images/image-qr-code.png" alt="QR Code Image"  />
+      </div>   
+      <h3>Improve your front-end skills by building projects</h2>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills
+        to the next level
+      </p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/krmfahith/">Fahith K.R.M.</a>.
+    </div>
+  </body>
+</html>
