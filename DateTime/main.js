@@ -25,7 +25,7 @@ function displayTime(){
     dayname = DaysName[dayname]
 
     //slect the month name
-    month = MonthsName[month-1]
+    month = MonthsName[month]
 
     // add zero for single number value like as [2 -> 02]
     function addZero(num){
