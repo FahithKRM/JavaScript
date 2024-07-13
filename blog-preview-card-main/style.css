@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+--Yellow: hsl(47, 88%, 63%);
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Figtree';
+    background-color: var(--Yellow);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 16px;
+}
+
+.container{
+    background-color: var(--White);
+    max-width: 320px;
+    border: solid 1px var(--Black);
+    box-shadow: 8px 8px 0px var(--Black);
+    border-radius: 15px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image img{
+    border-radius: 15px;
+    width: 280px;
+
+}
+
+.details{
+    margin: 0 20px;
+}
+
+.label{
+    display: flex;
+}
+
+.label p{
+    background-color: var(--Yellow);
+    padding: 6px 14px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.date{
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.content{
+    margin: 8px 0;
+    color: var(--Grey);
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.author img{
+    width: 40px;
+    height: 40px;
+}
+
+.author p{
+    font-weight: 800;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 300px;
+    }
+    
+    .image img{
+        width: 260px;
+    
+    }
+    
+    .details{
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        max-width: 280px;
+    }
+    
+    .image img{
+        width: 240px;
+    
+    }
+
+    .details{
+        margin: 0 20px;
+    }
+
+    .attribution{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+}
