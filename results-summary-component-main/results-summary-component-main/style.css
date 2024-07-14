@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk';
+    background-color: var(--White);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 18px;
+    color: var(--Light-lavender);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 52px;
+    color: var(--White);
+}
+
+h2{
+    font-size: 22px;
+    color: var(--White);
+    font-weight: 700;
+}
+
+.container {
+    background-color: var(--White);
+    border-radius: 15px;
+    display: flex;
+    max-width: 640px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px var(--Pale-blue);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    /* background-color: var(--Light-slate-blue, --Light-royal-blue); */
+    background: linear-gradient(20deg , var(--Light-royal-blue),var(--Light-slate-blue));
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.score h3 {
+    color: var(--Light-lavender);
+}
+
+.value {
+    margin: 30px;
+    background: linear-gradient(45deg, var(--Persian-blue), var(--Violet-blue));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score p{
+    padding: 10px;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.summary h3{
+    margin-left: 20px;
+}
+.reaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: hsl(0, 100%, 95%);
+}
+
+.reaction .title{
+    color: var(--Light-red);
+    font-weight: 700;
+}
+
+.reaction p {
+    font-weight: 600;
+}
+.reaction p span{
+    color: var(--Dark-gray-blue);
+    font-weight: 900;
+}
+
+.memory{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: hsl(39, 100%, 95%);
+}
+
+.memory .title{
+    color: var(--Orangey-yellow);
+    font-weight: 700;
+}
+
+.memory p {
+    font-weight: 600;
+}
+.memory p span{
+    color: var(--Dark-gray-blue);
+    font-weight: 900;
+}
+.verbal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: hsl(166, 100%, 95%);
+}
+
+.verbal .title{
+    color: var(--Green-teal);
+    font-weight: 700;
+}
+
+.verbal p {
+    font-weight: 600;
+}
+.verbal p span{
+    color: var(--Dark-gray-blue);
+    font-weight: 900;
+}
+.visual{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: hsl(234, 85%, 95%);
+}
+.visual .title{
+    color: var(--Cobalt-blue);
+    font-weight: 700;
+}
+
+.visual p {
+    font-weight: 600;
+}
+.visual p span{
+    color: var(--Dark-gray-blue);
+    font-weight: 900;
+}
+
+.continueButton{
+    border: none;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.attribution{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px;
+}
+
+@media (max-width : 640px) {
+    .container {
+        display: block;
+        max-width: 320px;
+        box-shadow: 0px 10px 10px var(--Pale-blue);
+    }
+}
